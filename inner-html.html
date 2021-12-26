@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inner Html</title>
+    </head>
+    <body>
+        <p id="content"></p>
+
+        <script>
+            const content = document.getElementById("content");
+
+            content.innerHTML = "<h1> Title </h1> <p>Descrioptions</p>";
+            // content.innerText = "<h1> Title </h1> <p>Descrioptions</p>";
+            // content.textContent = "<h1> Title </h1> <p>Descrioptions</p>";
+        </script>
+    </body>
+</html>
