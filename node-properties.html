@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Node Properties</title>
+    </head>
+    <body>
+        <ul id="menu">
+            <li id="first">First</li>
+            <li id="second">Second</li>
+            <li id="third">Thrid</li>
+        </ul>
+
+        <script>
+            const menu = document.getElementById("menu");
+            // untuk mendapatkan informasi seluruh children dari nodes
+            console.info(menu.childNodes);
+
+            const first = document.getElementById("second");
+            // untuk mendapatkan informasi node sebeumnya
+            console.info(first.previousSibling.previousSibling);
+            // untuk mendapatkan informasi node setelahnya
+            console.info(first.nextSibling.nextSibling);
+        </script>
+    </body>
+</html>
