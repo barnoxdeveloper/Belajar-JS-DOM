@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Attribute Create</title>
+    </head>
+    <body>
+        <img id="logo" alt="tunas" />
+
+        <script>
+            const logo = document.getElementById("logo");
+
+            // https://tunasmitra.co.id/frontend/img/produk-tunas-mitra.png
+            // ada 2 cara untuk membuat attribute
+            // cara 1
+            // const src = document.createAttribute("src");
+            // src.value =
+            //     "https://tunasmitra.co.id/frontend/img/produk-tunas-mitra.png";
+            // logo.setAttributeNode(src);
+
+            // cara 2
+            logo.setAttribute(
+                "src",
+                "https://tunasmitra.co.id/frontend/img/produk-tunas-mitra.png"
+            );
+        </script>
+    </body>
+</html>
